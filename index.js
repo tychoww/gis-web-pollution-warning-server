@@ -56,7 +56,7 @@ cron.schedule(
   "* * * * *",
   () => {
     console.log("running 12 hours", new Date(1684065099*1000));
-    // getWeather();
+    getWeather();
   },
   {
     scheduled: true,
