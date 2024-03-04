@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-12 mt-3">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Cập nhật</h4>
+            </div>
+            <div class="card-content">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <form id="user-update-info">
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationServer01">Tên đầy đủ</label>
+                                        <input id="fullname" type="text" class="form-control" value="<%= data.current_user.fullname %>" required>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationServer02">Email</label>
+                                        <input id="email" type="text" class="form-control" value="<%= data.current_user.email %>" required>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationServerUsername">Mật khẩu</label>
+                                        <div class="input-group">
+                                            <input id="password" type="text" class="form-control" value="<%= data.current_user.password %>" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit" id="user_update">Cập nhật</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
